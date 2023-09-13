@@ -1,0 +1,232 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 0px 5px #888888;
+}
+
+.navbar img {
+  padding-left: 10px;
+}
+
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-container a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.navbar .navbar-container a:hover {
+  background-color: #afe794;
+}
+
+.navbar .navbar-container .navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding-right: 10px;
+}
+
+.navbar .navbar-container .navbar-menu li,
+.navbar .navbar-container .navbar-menu li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.nav-toggle:hover {
+  border-color: #afe794;
+}
+
+.plans-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.plans-container .plan-header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.plans-container .plan-header div {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.plan-cost {
+  width: 100%;
+  display: flex;
+}
+
+.plan-cost h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.plan-cost span {
+  font-weight: 600;
+  padding-top: 60px;
+}
+
+.plan-offer {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid rgb(0, 156, 130);
+  border-bottom: 1px solid rgb(0, 156, 130);
+  background-color: #efffe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-details {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-details h4 {
+  padding-left: 20px;
+}
+
+.plan-details ul {
+  list-style: none;
+}
+
+.plan-details li {
+  padding: 10px;
+}
+
+.plan-details ul li:before {
+  content: "\2714\0020";
+}
+
+.buy-plan-btn {
+  width: 90%;
+  padding: 20px;
+  background-color: rgb(17, 16, 16);
+  border-radius: 30px;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar-container .navbar-menu {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .plans-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .plans-container .plan-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+  }
+
+  .plans-container .plan-header div {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding-top: 15px;
+    cursor: pointer;
+  }
+
+  .plan-cost {
+    width: 100%;
+    display: flex;
+  }
+
+  .plan-cost h1 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .plan-cost span {
+    font-weight: 600;
+    padding-top: 60px;
+  }
+
+  .plan-offer {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgb(0, 156, 130);
+    border-bottom: 1px solid rgb(0, 156, 130);
+    background-color: #efffe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .plan-details {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-details h4 {
+    padding-left: 20px;
+  }
+
+  .plan-details ul {
+    list-style: none;
+  }
+
+  .plan-details li {
+    padding: 10px;
+  }
+
+  .plan-details ul li:before {
+    content: "\2714\0020";
+  }
+
+  .buy-plan-btn {
+    width: 90%;
+    padding: 20px;
+    background-color: rgb(17, 16, 16);
+    border-radius: 30px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
